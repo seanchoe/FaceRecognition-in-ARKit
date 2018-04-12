@@ -14,3 +14,6 @@ Pods
 
 # osx noise
 .DS_Store
+
+#CorML model(Too big)
+faces_model.mlmodel
