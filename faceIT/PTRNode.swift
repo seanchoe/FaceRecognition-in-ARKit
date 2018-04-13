@@ -68,7 +68,7 @@ class PTRNode: SCNNode {
     fatalError("init(coder:) has not been implemented")
   }
   
-  override func move(_ position: SCNVector3)  {
+  func move(_ position: SCNVector3)  {
     SCNTransaction.begin()
     SCNTransaction.animationDuration = 0.4
     SCNTransaction.animationTimingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionLinear)
@@ -77,7 +77,7 @@ class PTRNode: SCNNode {
     SCNTransaction.commit()
   }
   
-  override func hide()  {
+  func hide()  {
     SCNTransaction.begin()
     SCNTransaction.animationDuration = 0.4
     SCNTransaction.animationTimingFunction = CAMediaTimingFunction.init(name: kCAMediaTimingFunctionLinear)
@@ -85,7 +85,7 @@ class PTRNode: SCNNode {
     SCNTransaction.commit()
   }
   
-  override func show()  {
+  func show()  {
     opacity = 0
     SCNTransaction.begin()
     SCNTransaction.animationDuration = 0.4

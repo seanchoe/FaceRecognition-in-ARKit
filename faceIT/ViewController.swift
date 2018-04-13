@@ -15,6 +15,7 @@ import RxSwift
 import RxCocoa
 import Async
 import PKHUD
+import SafariServices
 
 class ViewController: UIViewController, ARSCNViewDelegate {
   
@@ -77,8 +78,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
       let location: CGPoint = rec.location(in: sceneView)
       let hits = self.sceneView.hitTest(location, options: nil)
       if !hits.isEmpty{
-        let tappedNode = hits.first?.node
-        
+        let safariVC = SFSafariViewController(url: URL(string: "https://www.patreon.com/seanchoe")!)
+        self.present(safariVC, animated: true, completion: nil)
       }
     }
   }

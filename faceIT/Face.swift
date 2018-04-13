@@ -11,7 +11,7 @@ import ARKit
 
 class Face {
     let name: String
-    let node: SCNNode
+    let node: PTRNode
     var hidden: Bool {
         get{
             return node.opacity != 1
@@ -24,7 +24,7 @@ class Face {
     }
     private(set) var updated = Date()
     
-    init(name: String, node: SCNNode, timestamp: TimeInterval) {
+    init(name: String, node: PTRNode, timestamp: TimeInterval) {
         self.name = name
         self.node = node
         self.timestamp = timestamp
