@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09D55737208019C100529006 /* patreon_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D55736208019C100529006 /* patreon_logo.png */; };
 		09D5573920801E3500529006 /* PTRNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D5573820801E3500529006 /* PTRNode.swift */; };
+		09D5573D2081119A00529006 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D5573C2081119A00529006 /* Images.xcassets */; };
 		2E246A0F1F4B2A080015CA71 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E246A0E1F4B2A080015CA71 /* Face.swift */; };
 		2E5C6C421F2F825900749336 /* CIImage+FaceDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5C6C411F2F825900749336 /* CIImage+FaceDetection.swift */; };
 		2EBDC7101F0FC72F00243609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDC70F1F0FC72F00243609 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 		082B4C2416120C827C8E5C0E /* Pods_faceITTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_faceITTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D55736208019C100529006 /* patreon_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patreon_logo.png; sourceTree = "<group>"; };
 		09D5573820801E3500529006 /* PTRNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTRNode.swift; sourceTree = "<group>"; };
+		09D5573C2081119A00529006 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E246A0E1F4B2A080015CA71 /* Face.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
 		2E5C6C411F2F825900749336 /* CIImage+FaceDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+FaceDetection.swift"; sourceTree = "<group>"; };
 		2EBDC70C1F0FC72F00243609 /* faceIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faceIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 				2EC9AD441F45DA5300784281 /* SCNVector3+Distance.swift */,
 				2E246A0E1F4B2A080015CA71 /* Face.swift */,
 				09D5573820801E3500529006 /* PTRNode.swift */,
+				09D5573C2081119A00529006 /* Images.xcassets */,
 			);
 			path = faceIT;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EBDC71C1F0FC72F00243609 /* LaunchScreen.storyboard in Resources */,
+				09D5573D2081119A00529006 /* Images.xcassets in Resources */,
 				2EBDC7171F0FC72F00243609 /* Main.storyboard in Resources */,
 				09D55737208019C100529006 /* patreon_logo.png in Resources */,
 			);
@@ -388,6 +392,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BA678741ACBFB3E5F4568CA /* Pods-faceIT.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Shared Development (S3756TFG3R)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -410,6 +416,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F86F8DBBAC165C7236B37B74 /* Pods-faceIT.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: NovaTec Ingenieure für neue Informationstechnologien GmbH";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
