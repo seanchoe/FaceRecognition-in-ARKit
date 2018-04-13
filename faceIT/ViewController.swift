@@ -219,7 +219,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     // Create new face
     guard let existentFace = results.first else {
-      let node = PTRNode(withText: name, position: position)
+      let node = PTRNode(withText: "Sean Choe", position: position)
       
       Async.main {
         self.sceneView.scene.rootNode.addChildNode(node)
